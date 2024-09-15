@@ -143,3 +143,4 @@ D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\refint\WEB_253503_Timoshevic
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.pdb
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.genruntimeconfig.cache
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\ref\WEB_253503_Timoshevich.dll
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.sourcelink.json

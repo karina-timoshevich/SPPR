@@ -1,14 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using WEB_253503_Timoshevich.Models;
 
 namespace WEB_253503_Timoshevich.Controllers
 {
 	public class Home : Controller
 	{
-		// GET: Home
-		public ActionResult Index()
+        // GET: Home
+        [ViewData]
+        public List<ListDemo> ListDemos { get; set; } = new() {
+        new ListDemo { Id = 0, Name = "Item-1" },
+        new ListDemo { Id = 1, Name = "Item-2" },
+        new ListDemo { Id = 2, Name = "Item-3" }
+
+    };
+        public ActionResult Index()
 		{
-			return View();
+			ViewData["LabTitle"] = "Лабораторная работа №2";
+            ViewBag.SelectList = new SelectList(ListDemos, "Id", "Name");
+
+            return View();
 		}
 
 		// GET: Home/Details/5
