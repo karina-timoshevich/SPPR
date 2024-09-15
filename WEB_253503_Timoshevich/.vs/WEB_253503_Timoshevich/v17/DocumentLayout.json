@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\shared\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:views\\shared\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.csproj|solutionrelative:controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T13:27:29.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T13:26:19.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T18:12:59.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Layout.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Layout.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T18:05:07.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-03T14:27:07.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-03T14:26:00.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.json",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-03T14:25:58.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\Home.cs",
+              "RelativeDocumentMoniker": "Controllers\\Home.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\Home.cs",
+              "RelativeToolTip": "Controllers\\Home.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T14:23:29.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T14:23:03.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
