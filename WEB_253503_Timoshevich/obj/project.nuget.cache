@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JuJ48aDttYEJ+QzpjwGZGYj36aE+7LoGFYihQJofjifmtF6/hdJe/wYS9yry3URRcQLX3M9MFa7N9LghOeT+YQ==",
+  "dgSpecHash": "zZ8JN3NoQyzhjvEWh5yXubaY62lXwlUAD82uHUPQUzWbOVQCSFsJrY7d6hRjONBw9vxbO4mDsLx8ptQ2OYcgmw==",
   "success": true,
-  "projectFilePath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.csproj",
+  "projectFilePath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

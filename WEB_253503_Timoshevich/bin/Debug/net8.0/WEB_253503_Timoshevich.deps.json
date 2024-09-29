@@ -12,7 +12,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.5",
           "Microsoft.AspNetCore.Identity.UI": "8.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.5"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.5",
+          "WEB_2535503_Timoshevich.Domain": "1.0.0"
         },
         "runtime": {
           "WEB_253503_Timoshevich.dll": {}
@@ -960,6 +961,11 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "WEB_2535503_Timoshevich.Domain/1.0.0": {
+        "runtime": {
+          "WEB_2535503_Timoshevich.Domain.dll": {}
+        }
       }
     }
   },
@@ -1563,6 +1569,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "WEB_2535503_Timoshevich.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

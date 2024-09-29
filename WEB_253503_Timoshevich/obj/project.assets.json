@@ -1671,6 +1671,16 @@
             "rid": "win"
           }
         }
+      },
+      "WEB_2535503_Timoshevich.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WEB_2535503_Timoshevich.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WEB_2535503_Timoshevich.Domain.dll": {}
+        }
       }
     }
   },
@@ -4540,6 +4550,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WEB_2535503_Timoshevich.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WEB_2535503_Timoshevich.Domain/WEB_2535503_Timoshevich.Domain.csproj",
+      "msbuildProject": "../WEB_2535503_Timoshevich.Domain/WEB_2535503_Timoshevich.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4548,7 +4563,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.5",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.5",
+      "WEB_2535503_Timoshevich.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4558,9 +4574,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.csproj",
-      "projectName": "WEB_253503_Timoshevich",
-      "projectPath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.csproj",
+      "projectUniqueName": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.UI.csproj",
+      "projectName": "WEB_253503_Timoshevich.UI",
+      "projectPath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\WEB_253503_Timoshevich.UI.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\obj\\",
       "projectStyle": "PackageReference",
@@ -4582,7 +4598,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\WEB_2535503_Timoshevich.Domain.csproj": {
+              "projectPath": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\WEB_2535503_Timoshevich.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

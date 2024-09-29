@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_Timoshevich", "WEB_253503_Timoshevich.csproj", "{3D4003EA-E54D-493C-AAA3-7AE212EF692C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_253503_Timoshevich.UI", "WEB_253503_Timoshevich.UI.csproj", "{3D4003EA-E54D-493C-AAA3-7AE212EF692C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_2535503_Timoshevich.Domain", "..\WEB_2535503_Timoshevich.Domain\WEB_2535503_Timoshevich.Domain.csproj", "{7714032D-F84A-4301-A52E-36E5FB815698}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3D4003EA-E54D-493C-AAA3-7AE212EF692C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D4003EA-E54D-493C-AAA3-7AE212EF692C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D4003EA-E54D-493C-AAA3-7AE212EF692C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7714032D-F84A-4301-A52E-36E5FB815698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7714032D-F84A-4301-A52E-36E5FB815698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7714032D-F84A-4301-A52E-36E5FB815698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7714032D-F84A-4301-A52E-36E5FB815698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

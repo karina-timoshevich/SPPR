@@ -1,6 +1,34 @@
 {
   "Files": [
     {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Borsch.jpg",
+      "PackagePath": "staticwebassets\\Images\\Borsch.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Cake.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\ChickenSoup.jpg",
+      "PackagePath": "staticwebassets\\Images\\ChickenSoup.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Krabovyi.jpg",
+      "PackagePath": "staticwebassets\\Images\\Krabovyi.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Ramen.jpg",
+      "PackagePath": "staticwebassets\\Images\\Ramen.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Soup.jpg",
+      "PackagePath": "staticwebassets\\Images\\Soup.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\Tea.jpg",
+      "PackagePath": "staticwebassets\\Images\\Tea.jpg"
+    },
+    {
       "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\cat_icon.png",
       "PackagePath": "staticwebassets\\Images\\cat_icon.png"
     },
@@ -417,20 +445,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WEB_253503_Timoshevich.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WEB_253503_Timoshevich.UI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WEB_253503_Timoshevich.props",
-      "PackagePath": "build\\WEB_253503_Timoshevich.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WEB_253503_Timoshevich.UI.props",
+      "PackagePath": "build\\WEB_253503_Timoshevich.UI.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WEB_253503_Timoshevich.props",
-      "PackagePath": "buildMultiTargeting\\WEB_253503_Timoshevich.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WEB_253503_Timoshevich.UI.props",
+      "PackagePath": "buildMultiTargeting\\WEB_253503_Timoshevich.UI.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WEB_253503_Timoshevich.props",
-      "PackagePath": "buildTransitive\\WEB_253503_Timoshevich.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WEB_253503_Timoshevich.UI.props",
+      "PackagePath": "buildTransitive\\WEB_253503_Timoshevich.UI.props"
     }
   ],
   "ElementsToRemove": []

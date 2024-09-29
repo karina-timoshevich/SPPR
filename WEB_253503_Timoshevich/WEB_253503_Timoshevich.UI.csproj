@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Images\" />
+    <ProjectReference Include="..\WEB_2535503_Timoshevich.Domain\WEB_2535503_Timoshevich.Domain.csproj" />
   </ItemGroup>
 
 </Project>

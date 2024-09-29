@@ -1,3 +1,12 @@
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.csproj.AssemblyReference.cache
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.GeneratedMSBuildEditorConfig.editorconfig
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.AssemblyInfoInputs.cache
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.AssemblyInfo.cs
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.csproj.CoreCompileInputs.cache
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.MvcApplicationPartsAssemblyInfo.cache
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.RazorAssemblyInfo.cache
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.RazorAssemblyInfo.cs
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.sourcelink.json
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\appsettings.Development.json
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\appsettings.json
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\libman.json
@@ -120,15 +129,8 @@ D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\runtimes\win\lib\net6.0\Syst
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.csproj.AssemblyReference.cache
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.GeneratedMSBuildEditorConfig.editorconfig
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.AssemblyInfoInputs.cache
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.AssemblyInfo.cs
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.csproj.CoreCompileInputs.cache
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.MvcApplicationPartsAssemblyInfo.cs
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.MvcApplicationPartsAssemblyInfo.cache
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.RazorAssemblyInfo.cache
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.RazorAssemblyInfo.cs
+D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\WEB_2535503_Timoshevich.Domain.dll
+D:\5 SEM\C#\WEB_253503_Timoshevich\bin\Debug\net8.0\WEB_2535503_Timoshevich.Domain.pdb
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\staticwebassets.build.json
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\staticwebassets.development.json
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\staticwebassets\msbuild.WEB_253503_Timoshevich.Microsoft.AspNetCore.StaticWebAssets.props
@@ -143,4 +145,4 @@ D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\refint\WEB_253503_Timoshevic
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.pdb
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.genruntimeconfig.cache
 D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\ref\WEB_253503_Timoshevich.dll
-D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.sourcelink.json
+D:\5 SEM\C#\WEB_253503_Timoshevich\obj\Debug\net8.0\WEB_253503_Timoshevich.MvcApplicationPartsAssemblyInfo.cs

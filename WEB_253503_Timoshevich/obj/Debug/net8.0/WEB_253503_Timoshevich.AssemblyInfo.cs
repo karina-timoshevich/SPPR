@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEB_253503_Timoshevich")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31851224e0ff1a059855afe71fbdb6fb742ded83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f422012e65a0c14854eef53c6f8428d02eb2ed25")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEB_253503_Timoshevich")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEB_253503_Timoshevich")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,27 @@
+﻿@model WEB_2535503_Timoshevich.Domain.Models.ListModel<WEB_2535503_Timoshevich.Domain.Entities.Dish>
+
+<h2>Список продуктов</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Калории</th>
+            <th>Категория</th>
+            <th>Изображение</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dish in Model.Items)
+        {
+            <tr>
+                <td>@dish.Name</td>
+                <td>@dish.Description</td>
+                <td>@dish.Calories</td>
+                <td>@dish.Category?.Name</td>
+                <td><img src="@dish.Image" alt="@dish.Name" style="width:100px;" /></td>
+            </tr>
+        }
+    </tbody>
+</table>
