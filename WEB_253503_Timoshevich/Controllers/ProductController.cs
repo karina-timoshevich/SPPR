@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_2535503_Timoshevich.Domain.Entities;
@@ -21,16 +22,23 @@ public class ProductController : Controller
         if (!categoriesResponse.Successfull)
             return NotFound(categoriesResponse.ErrorMessage);
 
-        // Передаем данные в продуктовый сервис
         var productResponse = await _productService.GetProductListAsync(category, pageNo);
         if (!productResponse.Successfull)
             return NotFound(productResponse.ErrorMessage);
 
-        // Передаем данные в представление
-        ViewData["currentCategory"] = string.IsNullOrEmpty(category) ? "Все" : category;
+        string currentCategoryName = null;
+        var currentCategory = categoriesResponse.Data.Find(cat => cat.NormalizedName == category);
+        if (currentCategory != null)
+        {
+            currentCategoryName = currentCategory.Name;
+        }
+
+        ViewData["currentCategoryName"] = string.IsNullOrEmpty(currentCategoryName) ? "Все" : currentCategoryName;
+        ViewData["currentCategoryNormalizedName"] = category;
+
         ViewBag.Categories = categoriesResponse.Data;
 
-        return View(productResponse.Data); // Возвращаем правильную модель
+        return View(productResponse.Data); 
     }
 
 }

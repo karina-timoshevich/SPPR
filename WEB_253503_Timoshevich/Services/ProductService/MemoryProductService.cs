@@ -14,18 +14,13 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
         private List<Category> _categories;
         private readonly int _itemsPerPage;
 
-        // Внедряем IConfiguration и ICategoryService в конструктор
         public MemoryProductService(
             IConfiguration config,
             ICategoryService categoryService)
         {
-            // Получаем категории через categoryService
             _categories = categoryService.GetCategoryListAsync().Result.Data;
-
-            // Получаем количество элементов на странице из конфигурации
             _itemsPerPage = int.Parse(config["ItemsPerPage"] ?? "3");
 
-            // Заполняем коллекции данными
             SetupData();
         }
 
@@ -66,44 +61,39 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
                     Calories = 500, Image = "Images/ChickenSoup.jpg",
                     Category = _categories.Find(c => c.NormalizedName.Equals("soups"))
                 },
-                new Dish { Id = 7, Name = "Ramen", // Исправлено ID
+                new Dish { Id = 7, Name = "Ramen", 
                     Description = "Imagine Asia",
                     Calories = 500, Image = "Images/Ramen.jpg",
                     Category = _categories.Find(c => c.NormalizedName.Equals("soups"))
                 }
             };
         }
-
         /// <summary>
         /// Получение списка продуктов с фильтрацией по категории и разбиением на страницы
         /// </summary>
         public Task<ResponseData<ListModel<Dish>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
         {
-            // Проверяем, если categoryNormalizedName == null или пустая строка, то возвращаем все блюда
             var filteredDishes = _dishes
                 .Where(d => string.IsNullOrEmpty(categoryNormalizedName) || categoryNormalizedName == "Все" || d.Category.NormalizedName.Equals(categoryNormalizedName))
                 .ToList();
 
-            // Вычисляем общее количество страниц
             var totalPages = (int)Math.Ceiling((double)filteredDishes.Count / _itemsPerPage);
 
-            // Убедитесь, что pageNo находится в допустимых пределах
             if (pageNo < 1 || pageNo > totalPages)
             {
-                pageNo = 1; // Сбрасываем на первую страницу, если номер вне пределов
+                pageNo = 1; 
             }
 
-            // Получаем нужную страницу
             var paginatedDishes = filteredDishes
-                .Skip((pageNo - 1) * _itemsPerPage) // Пропускаем элементы до нужной страницы
-                .Take(_itemsPerPage) // Берем только количество элементов на страницу
+                .Skip((pageNo - 1) * _itemsPerPage)  
+                .Take(_itemsPerPage) 
                 .ToList();
 
             var result = new ListModel<Dish>
             {
                 Items = paginatedDishes,
                 CurrentPage = pageNo,
-                TotalPages = totalPages // Устанавливаем общее количество страниц
+                TotalPages = totalPages 
             };
 
             return Task.FromResult(ResponseData<ListModel<Dish>>.Success(result));
