@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_253503_Timoshevich.UI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_2535503_Timoshevich.Domain", "..\WEB_2535503_Timoshevich.Domain\WEB_2535503_Timoshevich.Domain.csproj", "{7714032D-F84A-4301-A52E-36E5FB815698}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_Timoshevich.API", "..\WEB_253503_Timoshevich.API\WEB_253503_Timoshevich.API.csproj", "{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7714032D-F84A-4301-A52E-36E5FB815698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7714032D-F84A-4301-A52E-36E5FB815698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7714032D-F84A-4301-A52E-36E5FB815698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

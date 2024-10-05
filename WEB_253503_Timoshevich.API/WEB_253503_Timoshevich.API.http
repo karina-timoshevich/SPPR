@@ -1,0 +1,6 @@
+@WEB_253503_Timoshevich.API_HostAddress = http://localhost:5047
+
+GET {{WEB_253503_Timoshevich.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
