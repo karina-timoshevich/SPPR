@@ -4,9 +4,17 @@ using WEB_253503_Timoshevich.Data;
 using WEB_253503_Timoshevich.UI.Extensions;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
-using WEB_253503_Timoshevich.UI.Services.ProductService;
+using WEB_253503_Timoshevich.UI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+// Получение UriData из конфигурации
+var uriData = builder.Configuration.GetSection("UriData").Get<UriData>();
+builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
+    opt.BaseAddress = new Uri(uriData.ApiUri));
+
+builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
+    opt.BaseAddress = new Uri(uriData.ApiUri));
+
 
 builder.Services.AddControllersWithViews();
 builder.RegisterCustomServices();
