@@ -7,7 +7,7 @@ using WEB_2535503_Timoshevich.Domain.Models;
 
 namespace WEB_253503_Timoshevich.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("menu")]
     [ApiController]
     public class DishesController : ControllerBase
     {
@@ -18,16 +18,16 @@ namespace WEB_253503_Timoshevich.API.Controllers
             _productService = productService;
         }
 
-        // GET: api/Dishes
-        [HttpGet]
-        public async Task<ActionResult<ResponseData<List<Dish>>>> GetDishes(string? category, int pageNo = 1, int pageSize = 3)
+        // GET: api/Dishes/main-dishes?pageno=2
+        [HttpGet("{category}")]
+        public async Task<ActionResult<ResponseData<List<Dish>>>> GetDishes(string category, int pageNo = 1, int pageSize = 3)
         {
             var response = await _productService.GetProductListAsync(category, pageNo, pageSize);
             return Ok(response);
         }
 
         // GET: api/Dishes/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<ResponseData<Dish>>> GetDish(int id)
         {
             var response = await _productService.GetProductByIdAsync(id);
@@ -47,19 +47,16 @@ namespace WEB_253503_Timoshevich.API.Controllers
         }
 
         // DELETE: api/Dishes/5
-        [HttpDelete("{id}")]
-        // DELETE: api/Dishes/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteDish(int id)
         {
             var response = await _productService.DeleteProductAsync(id);
-            if (!response.Successfull)  // Используем корректное имя свойства Successfull
+            if (!response.Successfull)
             {
-                return NotFound(response.ErrorMessage);  // Используем корректное свойство ErrorMessage
+                return NotFound(response.ErrorMessage);
             }
 
             return NoContent();
         }
-
     }
 }
