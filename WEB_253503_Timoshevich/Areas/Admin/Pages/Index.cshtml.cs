@@ -19,13 +19,14 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
         public int CurrentPage { get; set; }
         public int TotalPages { get; set; }
 
-        public async Task OnGetAsync(int pageNumber = 1)
+        public async Task OnGetAsync(int? pageNo)
         {
-            var response = await _productService.GetProductListAsync(null, pageNumber);
+            CurrentPage = pageNo ?? 1;
+
+            var response = await _productService.GetProductListAsync(null, CurrentPage);
             if (response.Successfull)
             {
                 Dish = response.Data.Items;
-                CurrentPage = response.Data.CurrentPage;
                 TotalPages = response.Data.TotalPages;
             }
             else
@@ -33,7 +34,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
                 Dish = new List<Dish>();
             }
         }
-
-
     }
+
 }

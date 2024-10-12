@@ -7,7 +7,7 @@ using WEB_2535503_Timoshevich.Domain.Models;
 
 namespace WEB_253503_Timoshevich.API.Controllers
 {
-    [Route("menu")]
+    [Route("api/[controller]")]
     [ApiController]
     public class DishesController : ControllerBase
     {
@@ -45,6 +45,14 @@ namespace WEB_253503_Timoshevich.API.Controllers
             var response = await _productService.CreateProductAsync(dish);
             return CreatedAtAction(nameof(GetDish), new { id = response.Data.Id }, response);
         }
+        // GET: api/Dishes
+        [HttpGet]
+        public async Task<ActionResult<ResponseData<List<Dish>>>> GetAllDishes(int pageNo = 1, int pageSize = 3)
+        {
+            var response = await _productService.GetProductListAsync(null, pageNo, pageSize);
+            return Ok(response);
+        }
+
 
         // DELETE: api/Dishes/5
         [HttpDelete("{id:int}")]
