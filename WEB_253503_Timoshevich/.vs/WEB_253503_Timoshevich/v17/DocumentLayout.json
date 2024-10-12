@@ -3,8 +3,69 @@
   "WorkspaceRootPath": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\controllers\\dishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\productservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\categoryservice\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\productservice\\memoryproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\productservice\\memoryproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\categoryservice\\apicategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,49 +76,55 @@
       "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\categoryservice\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7714032D-F84A-4301-A52E-36E5FB815698}|..\\WEB_2535503_Timoshevich.Domain\\WEB_2535503_Timoshevich.Domain.csproj|d:\\5 sem\\c#\\web_2535503_timoshevich.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\areas\\admin\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:areas\\admin\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\models\\uridata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:models\\uridata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\controllers\\dishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\productservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7714032D-F84A-4301-A52E-36E5FB815698}|..\\WEB_2535503_Timoshevich.Domain\\WEB_2535503_Timoshevich.Domain.csproj|d:\\5 sem\\c#\\web_2535503_timoshevich.domain\\models\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\categoryservice\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\services\\categoryservice\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\categoryservice\\memorycetegoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,30 +137,11 @@
       "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\productservice\\memoryproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\productservice\\memoryproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B517D386-A08C-4F32-B4B4-8A0DB4CD2280}|..\\WEB_253503_Timoshevich.API\\WEB_253503_Timoshevich.API.csproj|d:\\5 sem\\c#\\web_253503_timoshevich.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7714032D-F84A-4301-A52E-36E5FB815698}|..\\WEB_2535503_Timoshevich.Domain\\WEB_2535503_Timoshevich.Domain.csproj|d:\\5 sem\\c#\\web_2535503_timoshevich.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|solutionrelative:services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D4003EA-E54D-493C-AAA3-7AE212EF692C}|WEB_253503_Timoshevich.UI.csproj|d:\\5 sem\\c#\\web_253503_timoshevich\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -152,72 +200,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiCategoryService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ApiCategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\CategoryService\\ApiCategoryService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ApiCategoryService.cs",
-              "RelativeToolTip": "Services\\CategoryService\\ApiCategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:34:38.218Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiProductService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService\\ApiProductService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeToolTip": "Services\\ProductService\\ApiProductService.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwCYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:33:38.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UriData.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\UriData.cs",
-              "RelativeDocumentMoniker": "Models\\UriData.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\UriData.cs",
-              "RelativeToolTip": "Models\\UriData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:26:56.191Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:48:18.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:46:46.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Controllers\\CategoriesController.cs",
@@ -225,31 +216,138 @@
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Controllers\\CategoriesController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAIwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:32:12.589Z"
+              "WhenOpened": "2024-10-05T11:32:12.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DishesController.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:14:58.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAA2wGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:57:09.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAqwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T17:41:56.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAADwvywAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T18:59:00.851Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:29:38.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Index.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAqwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:38.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiProductService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService\\ApiProductService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeToolTip": "Services\\ProductService\\ApiProductService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAADwv1QAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:33:38.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\CategoryService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwv0MAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:48:18.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-29T19:17:23.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAqwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T15:12:39.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\CategoryService\\ICategoryService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeToolTip": "Services\\CategoryService\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T12:02:21.354Z"
+              "WhenOpened": "2024-09-29T15:12:39.247Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -259,85 +357,14 @@
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\IProductService.cs",
               "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\ProductService\\IProductService.cs",
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\IProductService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA7wCQAAABFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:56:13.293Z"
+              "WhenOpened": "2024-10-05T11:56:13.293Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\ProductService\\ProductService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA4wC4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:57:09.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DishesController.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Controllers\\DishesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T11:14:58.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-29T19:17:23.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\.gitignore",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\.gitignore",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\.gitignore",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\.gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-10-06T21:06:12.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:51:28.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Program.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Program.cs",
-              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:15:09.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Data\\AppDbContext.cs",
@@ -345,23 +372,285 @@
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Data\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:18:44.837Z"
+              "WhenOpened": "2024-10-05T10:18:44.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MemoryProductService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\MemoryProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService\\MemoryProductService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\MemoryProductService.cs",
+              "RelativeToolTip": "Services\\ProductService\\MemoryProductService.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAUwHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:41:33.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductService\\IProductService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\IProductService.cs",
+              "RelativeToolTip": "Services\\ProductService\\IProductService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T19:25:57.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Details.cshtml.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Details.cshtml.cs",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Details.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:29:37.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Details.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:37.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Data\\DbInitializer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T10:51:28.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\CategoryService\\ICategoryService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeToolTip": "Services\\CategoryService\\ICategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T12:02:21.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApiCategoryService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ApiCategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\CategoryService\\ApiCategoryService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\ApiCategoryService.cs",
+              "RelativeToolTip": "Services\\CategoryService\\ApiCategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:34:38.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
+              "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
+              "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T12:53:38.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Delete.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:38.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Edit.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:37.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Edit.cshtml.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Edit.cshtml.cs",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Edit.cshtml.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAmwEsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:29:37.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Delete.cshtml.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Delete.cshtml.cs",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Delete.cshtml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:29:38.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Create.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:37.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Pages\\Create.cshtml.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Areas\\Admin\\Pages\\Create.cshtml.cs",
+              "RelativeToolTip": "Areas\\Admin\\Pages\\Create.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:29:37.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T15:29:38.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:18:02.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Services\\CategoryService\\ICategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T11:46:46.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Program.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Program.cs",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T10:15:09.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UriData.cs",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\UriData.cs",
+              "RelativeDocumentMoniker": "Models\\UriData.cs",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\UriData.cs",
+              "RelativeToolTip": "Models\\UriData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T21:26:56.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\.gitignore",
+              "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\.gitignore",
+              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\.gitignore",
+              "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-10-06T21:06:12.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "ResponseData.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Models\\ResponseData.cs",
               "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Models\\ResponseData.cs",
               "ToolTip": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Models\\ResponseData.cs",
               "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Models\\ResponseData.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwCIAAAAmAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wCIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:28:53.555Z"
+              "WhenOpened": "2024-09-29T13:28:53.555Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "20241005104635_InitialCreate.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Migrations\\20241005104635_InitialCreate.cs",
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Migrations\\20241005104635_InitialCreate.cs",
@@ -369,11 +658,12 @@
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Migrations\\20241005104635_InitialCreate.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:46:36.171Z"
+              "WhenOpened": "2024-10-05T10:46:36.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\appsettings.json",
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\appsettings.json",
@@ -381,23 +671,12 @@
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-05T10:13:27.746Z"
+              "WhenOpened": "2024-10-05T10:13:27.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MemoryProductService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\MemoryProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService\\MemoryProductService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\MemoryProductService.cs",
-              "RelativeToolTip": "Services\\ProductService\\MemoryProductService.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAYwGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T17:41:33.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 35,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Category.cs",
@@ -405,11 +684,12 @@
               "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:02:00.907Z"
+              "WhenOpened": "2024-09-29T13:02:00.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 34,
               "Title": "MemoryCetegoryService.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\CategoryService\\MemoryCetegoryService.cs",
               "RelativeDocumentMoniker": "Services\\CategoryService\\MemoryCetegoryService.cs",
@@ -417,11 +697,12 @@
               "RelativeToolTip": "Services\\CategoryService\\MemoryCetegoryService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T20:06:36.323Z"
+              "WhenOpened": "2024-09-29T20:06:36.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\WEB_253503_Timoshevich.API\\Properties\\launchSettings.json",
@@ -429,11 +710,12 @@
               "RelativeToolTip": "..\\WEB_253503_Timoshevich.API\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-05T10:13:31.966Z"
+              "WhenOpened": "2024-10-05T10:13:31.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\Home.cs",
               "RelativeDocumentMoniker": "Controllers\\Home.cs",
@@ -441,71 +723,25 @@
               "RelativeToolTip": "Controllers\\Home.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T14:23:29.704Z"
+              "WhenOpened": "2024-09-03T14:23:29.704Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAIBJwA0AAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAIBZwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T14:23:03.159Z"
+              "WhenOpened": "2024-09-03T14:23:03.159Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T18:59:00.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Dish.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
-              "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
-              "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Entities\\Dish.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T12:53:38.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T17:41:56.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\IProductService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductService\\IProductService.cs",
-              "ToolTip": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Services\\ProductService\\IProductService.cs",
-              "RelativeToolTip": "Services\\ProductService\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T19:25:57.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "HostingExtensions.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Extensions\\HostingExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\HostingExtensions.cs",
@@ -513,11 +749,12 @@
               "RelativeToolTip": "Extensions\\HostingExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T12:02:14.199Z"
+              "WhenOpened": "2024-09-30T12:02:14.199Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "ListDemoModel.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\ListDemoModel.cs",
               "RelativeDocumentMoniker": "Models\\ListDemoModel.cs",
@@ -525,11 +762,12 @@
               "RelativeToolTip": "Models\\ListDemoModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T11:30:37.805Z"
+              "WhenOpened": "2024-09-15T11:30:37.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -537,11 +775,12 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T20:05:54.741Z"
+              "WhenOpened": "2024-09-29T20:05:54.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 45,
               "Title": "CartViewComponent.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Components\\CartViewComponent.cs",
               "RelativeDocumentMoniker": "Components\\CartViewComponent.cs",
@@ -549,11 +788,12 @@
               "RelativeToolTip": "Components\\CartViewComponent.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T13:26:25.787Z"
+              "WhenOpened": "2024-09-15T13:26:25.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 46,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -561,11 +801,12 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T13:05:10.827Z"
+              "WhenOpened": "2024-09-29T13:05:10.827Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "ProductListModel.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Models\\ProductListModel.cs",
               "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Models\\ProductListModel.cs",
@@ -573,11 +814,12 @@
               "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Models\\ProductListModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:29:39.135Z"
+              "WhenOpened": "2024-09-29T13:29:39.135Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 41,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_2535503_Timoshevich.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "..\\WEB_2535503_Timoshevich.Domain\\Class1.cs",
@@ -585,11 +827,12 @@
               "RelativeToolTip": "..\\WEB_2535503_Timoshevich.Domain\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T12:51:42.104Z"
+              "WhenOpened": "2024-09-29T12:51:42.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "Default.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\Components\\Cart\\Default.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Components\\Cart\\Default.cshtml",
@@ -597,11 +840,12 @@
               "RelativeToolTip": "Views\\Shared\\Components\\Cart\\Default.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T13:36:56.09Z"
+              "WhenOpened": "2024-09-15T13:36:56.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 48,
               "Title": "_UserInfoPartial.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\_UserInfoPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_UserInfoPartial.cshtml",
@@ -609,11 +853,12 @@
               "RelativeToolTip": "Views\\Shared\\_UserInfoPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T12:33:01.94Z"
+              "WhenOpened": "2024-09-15T12:33:01.94Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 49,
               "Title": "_MenuPartial.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\_MenuPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_MenuPartial.cshtml",
@@ -621,11 +866,12 @@
               "RelativeToolTip": "Views\\Shared\\_MenuPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T12:32:21.109Z"
+              "WhenOpened": "2024-09-15T12:32:21.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 50,
               "Title": "Layout.cshtml",
               "DocumentMoniker": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\Views\\Shared\\Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Layout.cshtml",
@@ -633,11 +879,8 @@
               "RelativeToolTip": "Views\\Shared\\Layout.cshtml",
               "ViewState": "AQIAAAQAAAAAAAAAAAAwwCkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T18:05:07.081Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-09-03T18:05:07.081Z",
+              "EditorCaption": ""
             }
           ]
         }

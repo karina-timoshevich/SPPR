@@ -5,6 +5,7 @@ using WEB_253503_Timoshevich.UI.Extensions;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
 using WEB_253503_Timoshevich.UI.Models;
+using WEB_253503_Timoshevich.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 // Получение UriData из конфигурации
@@ -27,6 +28,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

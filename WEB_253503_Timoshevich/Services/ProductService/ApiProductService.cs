@@ -76,4 +76,19 @@ public class ApiProductService : IProductService
         _logger.LogError($"-----> объект не создан. Error: {response.StatusCode}");
         return ResponseData<Dish>.Error($"Объект не добавлен. Error: {response.StatusCode}");
     }
+
+    public async Task<ResponseData<Dish>> GetProductByIdAsync(int id)
+    {
+        // Получите данные из вашего API
+        var urlString = $"{_httpClient.BaseAddress.AbsoluteUri}dishes/{id}";
+
+        var response = await _httpClient.GetAsync(urlString);
+        if (response.IsSuccessStatusCode)
+        {
+            return await response.Content.ReadFromJsonAsync<ResponseData<Dish>>();
+        }
+
+        return ResponseData<Dish>.Error("Блюдо не найдено");
+    }
+
 }

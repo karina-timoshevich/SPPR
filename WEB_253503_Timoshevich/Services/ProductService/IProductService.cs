@@ -20,7 +20,7 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
         /// 
 
 
-        //public Task<ResponseData<Dish>> GetProductByIdAsync(int id);
+        public Task<ResponseData<Dish>> GetProductByIdAsync(int id);
 
 
 
