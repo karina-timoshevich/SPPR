@@ -42,15 +42,8 @@ public class ApiProductService : IProductService
             urlString.Append($"{categoryNormalizedName}/");
         }
 
-        if (pageNo > 1)
-        {
-            urlString.Append($"page{pageNo}");
-        }
-
-        if (!_pageSize.Equals("3"))
-        {
-            urlString.Append(QueryString.Create("pageSize", _pageSize));
-        }
+        // Формируем правильный URL для пагинации
+        urlString.Append($"?pageNo={pageNo}");
 
         var response = await _httpClient.GetAsync(new Uri(urlString.ToString()));
 
@@ -70,6 +63,7 @@ public class ApiProductService : IProductService
         _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode}");
         return ResponseData<ListModel<Dish>>.Error($"Данные не получены от сервера. Error: {response.StatusCode}");
     }
+
 
     public async Task<ResponseData<Dish>> CreateProductAsync(Dish product, IFormFile? formFile)
     {
