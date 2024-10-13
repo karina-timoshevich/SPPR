@@ -55,7 +55,13 @@
             @Html.DisplayFor(model => model.Dish.MimeType)
         </dd>
     </dl>
-    
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Dish.Image)
+    </dt>
+    <dd class="col-sm-10">
+        <img src="@Model.Dish.Image" alt="@Model.Dish.Name" class="img-fluid" />
+    </dd>
+
     <form method="post">
         <input type="hidden" asp-for="Dish.Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

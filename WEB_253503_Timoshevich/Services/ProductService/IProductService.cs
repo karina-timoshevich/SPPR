@@ -35,7 +35,9 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
 
 
 
-        //public Task UpdateProductAsync(int id, Dish product, IFormFile? formFile);
+       public Task<ResponseData<Dish>> UpdateProductAsync(int id, Dish product, IFormFile? formFile);
+
+
 
 
 
@@ -49,7 +51,7 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
 
 
 
-        //  public Task DeleteProductAsync(int id);
+        Task<ResponseData<object>> DeleteProductAsync(int id);
 
 
 
@@ -64,6 +66,6 @@ namespace WEB_253503_Timoshevich.UI.Services.ProductService
 
 
 
-        //   public Task<ResponseData<Dish>> CreateProductAsync(Dish product, IFormFile? formFile);
+        public Task<ResponseData<Dish>> CreateProductAsync(Dish product, IFormFile? formFile);
     }
 }

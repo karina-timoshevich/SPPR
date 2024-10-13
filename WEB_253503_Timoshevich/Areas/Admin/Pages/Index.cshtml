@@ -34,6 +34,7 @@
                 <td>@Html.DisplayFor(modelItem => item.Calories)</td>
                 <td>
                     <img src="@Url.Content(item.Image)" alt="@item.Name" style="max-width:100px; max-height:100px;" />
+
                 </td>
                 <td>
                     <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">

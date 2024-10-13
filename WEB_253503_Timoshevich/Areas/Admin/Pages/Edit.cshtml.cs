@@ -1,79 +1,94 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using WEB_253503_Timoshevich.API.Data;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
+using WEB_253503_Timoshevich.UI.Services.CategoryService;
+using WEB_253503_Timoshevich.UI.Services.FileService; // Добавляем для использования IFileService
 using WEB_2535503_Timoshevich.Domain.Entities;
+using Microsoft.AspNetCore.Http;
 
 namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
 {
     public class EditModel : PageModel
     {
-        private readonly IProductService _context;
+        private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
+        private readonly IFileService _fileService; // Добавляем IFileService
 
-        public EditModel(IProductService context)
+        public EditModel(IProductService productService, ICategoryService categoryService, IFileService fileService)
         {
-            _context = context;
+            _productService = productService;
+            _categoryService = categoryService;
+            _fileService = fileService; // Инициализируем IFileService
         }
 
         [BindProperty]
-        public Dish Dish { get; set; } = default!;
+        public Dish Dish { get; set; } = new Dish();
+
+        [BindProperty]
+        public IFormFile? Upload { get; set; } // Для загрузки изображения
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-           // if (id == null)
-           // {
-           //     return NotFound();
-           // }
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-           // var dish =  await _context.Dishes.FirstOrDefaultAsync(m => m.Id == id);
-           // if (dish == null)
-           // {
-           //     return NotFound();
-           // }
-           // Dish = dish;
-           //ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+            var response = await _productService.GetProductByIdAsync(id.Value);
+            if (!response.Successfull || response.Data == null)
+            {
+                return NotFound();
+            }
+
+            Dish = response.Data;
+
+            // Получаем категории для выбора
+            var categoriesResponse = await _categoryService.GetCategoryListAsync();
+            ViewData["CategoryId"] = new SelectList(categoriesResponse.Data, "Id", "Name");
+
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return Page();
-            //}
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-            //_context.Attach(Dish).State = EntityState.Modified;
+            if (Upload != null)
+            {
+                var allowedTypes = new[] { "image/jpeg", "image/png", "image/gif", "image/jpg" };
+                if (!allowedTypes.Contains(Upload.ContentType))
+                {
+                    ModelState.AddModelError("Upload", "Неподдерживаемый тип файла. Пожалуйста, загрузите изображение.");
+                    return Page();
+                }
 
-            //try
-            //{
-            //    await _context.SaveChangesAsync();
-            //}
-            //catch (DbUpdateConcurrencyException)
-            //{
-            //    if (!DishExists(Dish.Id))
-            //    {
-            //        return NotFound();
-            //    }
-            //    else
-            //    {
-            //        throw;
-            //    }
-            //}
+                var imageUrl = await _fileService.SaveFileAsync(Upload);
+                if (string.IsNullOrEmpty(imageUrl))
+                {
+                    ModelState.AddModelError("", "Не удалось загрузить изображение.");
+                    return Page();
+                }
+
+                Dish.Image = imageUrl; // Обновляем путь к изображению
+            }
+
+
+            // Вызываем метод обновления, передавая Upload, если он есть
+            var response = await _productService.UpdateProductAsync(Dish.Id, Dish, Upload); // Передаем Upload в метод обновления
+            if (!response.Successfull)
+            {
+                ModelState.AddModelError("", "Не удалось обновить блюдо: " + response.ErrorMessage);
+                return Page();
+            }
 
             return RedirectToPage("./Index");
         }
 
-        //private bool DishExists(int id)
-        //{
-        //    return _context.Dishes.Any(e => e.Id == id);
-        //}
+
     }
 }

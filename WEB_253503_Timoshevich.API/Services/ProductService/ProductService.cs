@@ -24,19 +24,41 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
             return ResponseData<Dish>.Success(product);
         }
 
-        public async Task UpdateProductAsync(int id, Dish product)
+        public async Task<ResponseData<Dish>> UpdateProductAsync(int id, Dish product)
         {
             var existingProduct = await _context.Dishes.FindAsync(id);
             if (existingProduct == null)
             {
-                throw new Exception("Product not found");
+                return ResponseData<Dish>.Error("Product not found");
             }
+
+            // Обновляем поля продукта
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
             existingProduct.CategoryId = product.CategoryId;
-            await _context.SaveChangesAsync();
+            existingProduct.Calories = product.Calories;
+
+            // Обновляем изображение, если оно изменилось
+            if (!string.IsNullOrEmpty(product.Image))
+            {
+                existingProduct.Image = product.Image;
+            }
+
+            try
+            {
+                // Сохраняем изменения
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return ResponseData<Dish>.Error($"Ошибка сохранения: {ex.Message}");
+            }
+
+            return ResponseData<Dish>.Success(existingProduct);
         }
+
+
 
         public async Task<ResponseData<object>> DeleteProductAsync(int id)
         {
@@ -62,9 +84,36 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
         public async Task<ResponseData<string>> SaveImageAsync(int id, IFormFile formFile)
         {
-            // Здесь должен быть код для сохранения изображения и возвращения URL
-            return ResponseData<string>.Success("Image saved successfully");
+            if (formFile == null || formFile.Length == 0)
+            {
+                return ResponseData<string>.Error("Файл не был загружен.");
+            }
+
+            // Генерируем случайное имя файла, сохраняя расширение
+            var extension = Path.GetExtension(formFile.FileName);
+            var newFileName = $"{Guid.NewGuid()}{extension}";
+
+            // Указываем путь к папке, куда будем сохранять изображение
+            var uploadPath = Path.Combine("wwwroot", "Images"); // Убедитесь, что папка существует
+
+            // Убедитесь, что папка существует
+            if (!Directory.Exists(uploadPath))
+            {
+                Directory.CreateDirectory(uploadPath);
+            }
+
+            var filePath = Path.Combine(uploadPath, newFileName);
+
+            // Сохраняем файл на диск
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await formFile.CopyToAsync(stream);
+            }
+
+            // Возвращаем URL файла
+            return ResponseData<string>.Success($"/Images/{newFileName}");
         }
+
 
         public async Task<ResponseData<ListModel<Dish>>> GetProductListAsync(
         string? categoryNormalizedName,

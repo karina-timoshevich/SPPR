@@ -28,7 +28,9 @@ int pageSize = 3);
         /// <param name="id">Id изменяемомго объекта</param>
         /// <param name="product">объект с новыми параметрами</param>
         /// <returns></returns>
-        public Task UpdateProductAsync(int id, Dish product);
+        Task<ResponseData<Dish>> UpdateProductAsync(int id, Dish product);
+
+
         /// <summary>
         /// Удаление объекта
         /// </summary>

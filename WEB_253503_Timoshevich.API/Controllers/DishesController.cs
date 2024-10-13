@@ -66,5 +66,21 @@ namespace WEB_253503_Timoshevich.API.Controllers
 
             return NoContent();
         }
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> UpdateDish(int id, Dish dish)
+        {
+            if (id != dish.Id)
+            {
+                return BadRequest("ID блюда не совпадает с ID в теле запроса.");
+            }
+
+            var response = await _productService.UpdateProductAsync(id, dish);
+            if (!response.Successfull)
+            {
+                return BadRequest(response.ErrorMessage);
+            }
+
+            return Ok(response.Data); // Возвращаем обновленный объект вместо NoContent
+        }
     }
 }
