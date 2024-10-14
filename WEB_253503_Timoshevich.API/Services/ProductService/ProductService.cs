@@ -16,7 +16,9 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
         public async Task<ResponseData<Dish>> GetProductByIdAsync(int id)
         {
-            var product = await _context.Dishes.FindAsync(id);
+            var product = await _context.Dishes
+                                .Include(d => d.Category)  // Загружаем связанную категорию
+                                .FirstOrDefaultAsync(d => d.Id == id);
             if (product == null)
             {
                 return ResponseData<Dish>.Error("Product not found");
