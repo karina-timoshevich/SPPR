@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\030f0364-9ff1-4bb9-8f06-db41f56cf10b.jpeg",
+      "PackagePath": "staticwebassets\\Images\\030f0364-9ff1-4bb9-8f06-db41f56cf10b.jpeg"
+    },
+    {
       "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\249b5e2c-1863-47e3-885b-7c50a82c1b06.jpg",
       "PackagePath": "staticwebassets\\Images\\249b5e2c-1863-47e3-885b-7c50a82c1b06.jpg"
     },
@@ -51,6 +55,10 @@
     {
       "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\a40c58a6-dfff-4bae-87ce-23de94ea2727.jpg",
       "PackagePath": "staticwebassets\\Images\\a40c58a6-dfff-4bae-87ce-23de94ea2727.jpg"
+    },
+    {
+      "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\a53a5897-3338-412f-af0a-c77ac775742e.jpg",
+      "PackagePath": "staticwebassets\\Images\\a53a5897-3338-412f-af0a-c77ac775742e.jpg"
     },
     {
       "Id": "D:\\5 SEM\\C#\\WEB_253503_Timoshevich\\wwwroot\\Images\\cat_icon.png",
