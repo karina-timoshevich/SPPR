@@ -8,7 +8,6 @@ using WEB_253503_Timoshevich.UI.Models;
 using WEB_253503_Timoshevich.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-// Получение UriData из конфигурации
 var uriData = builder.Configuration.GetSection("UriData").Get<UriData>();
 builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
     opt.BaseAddress = new Uri(uriData.ApiUri));
@@ -20,7 +19,6 @@ builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
 builder.Services.AddControllersWithViews();
 builder.RegisterCustomServices();
 
-// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
@@ -35,8 +33,6 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();

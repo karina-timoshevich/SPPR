@@ -23,8 +23,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
         [BindProperty]
         public Dish Dish { get; set; } = default!;
 
-
-            // Отображение блюда, которое будет удалено
             public async Task<IActionResult> OnGetAsync(int? id)
             {
                 if (id == null)
@@ -42,8 +40,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
                 Dish = response.Data;
                 return Page();
             }
-
-            // Удаление блюда при подтверждении
             public async Task<IActionResult> OnPostAsync(int? id)
             {
                 if (id == null)
@@ -57,8 +53,7 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
                     ModelState.AddModelError("", "Не удалось удалить блюдо: " + response.ErrorMessage);
                     return Page();
                 }
-
-                return RedirectToPage("./Index"); // Перенаправление на список после удаления
+                return RedirectToPage("./Index"); 
             }
         
 

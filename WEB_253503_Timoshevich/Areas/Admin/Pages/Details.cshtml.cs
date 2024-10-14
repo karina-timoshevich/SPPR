@@ -21,7 +21,7 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
             _productService = productService;
         }
 
-        public Dish Dish { get; set; } = default!; // Убедитесь, что Dish инициализировано
+        public Dish Dish { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,13 +30,13 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
                 return NotFound();
             }
 
-            var response = await _productService.GetProductByIdAsync(id.Value); // Используйте ваш метод API для получения блюда
+            var response = await _productService.GetProductByIdAsync(id.Value); 
             if (!response.Successfull || response.Data == null)
             {
                 return NotFound();
             }
 
-            Dish = response.Data; // Инициализация свойства Dish
+            Dish = response.Data; 
 
             return Page();
         }

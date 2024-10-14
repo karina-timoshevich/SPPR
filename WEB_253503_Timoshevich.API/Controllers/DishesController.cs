@@ -80,7 +80,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
                 return BadRequest(response.ErrorMessage);
             }
 
-            return Ok(response.Data); // Возвращаем обновленный объект вместо NoContent
+            return Ok(response.Data); 
         }
     }
 }

@@ -22,7 +22,6 @@ public class FilesController : ControllerBase
             return BadRequest("Неверный тип файла. Пожалуйста, загрузите изображение.");
         }
 
-        // Логирование информации о файле
         Console.WriteLine($"Имя файла: {file.FileName}, Тип: {file.ContentType}");
 
         var fileName = Path.GetRandomFileName() + Path.GetExtension(file.FileName);
@@ -46,9 +45,6 @@ public class FilesController : ControllerBase
             return StatusCode(500, "Ошибка при загрузке файла.");
         }
     }
-
-
-
 
     [HttpDelete]
     public IActionResult DeleteFile(string fileName)

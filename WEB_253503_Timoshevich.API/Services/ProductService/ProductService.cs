@@ -17,7 +17,7 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
         public async Task<ResponseData<Dish>> GetProductByIdAsync(int id)
         {
             var product = await _context.Dishes
-                                .Include(d => d.Category)  // Загружаем связанную категорию
+                                .Include(d => d.Category)  
                                 .FirstOrDefaultAsync(d => d.Id == id);
             if (product == null)
             {
@@ -34,7 +34,6 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
                 return ResponseData<Dish>.Error("Product not found");
             }
 
-            // Обновляем поля продукта
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
@@ -42,7 +41,6 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
             existingProduct.Category = product.Category;
             existingProduct.Calories = product.Calories;
 
-            // Обновляем изображение, если оно изменилось
             if (!string.IsNullOrEmpty(product.Image))
             {
                 existingProduct.Image = product.Image;
@@ -50,7 +48,6 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
             try
             {
-                // Сохраняем изменения
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -60,8 +57,6 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
             return ResponseData<Dish>.Success(existingProduct);
         }
-
-
 
         public async Task<ResponseData<object>> DeleteProductAsync(int id)
         {
@@ -74,9 +69,8 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
             _context.Dishes.Remove(product);
             await _context.SaveChangesAsync();
 
-            return ResponseData<object>.Success(null);  // Успешное удаление
+            return ResponseData<object>.Success(null); 
         }
-
 
         public async Task<ResponseData<Dish>> CreateProductAsync(Dish product)
         {
@@ -92,14 +86,11 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
                 return ResponseData<string>.Error("Файл не был загружен.");
             }
 
-            // Генерируем случайное имя файла, сохраняя расширение
             var extension = Path.GetExtension(formFile.FileName);
             var newFileName = $"{Guid.NewGuid()}{extension}";
 
-            // Указываем путь к папке, куда будем сохранять изображение
-            var uploadPath = Path.Combine("wwwroot", "Images"); // Убедитесь, что папка существует
+            var uploadPath = Path.Combine("wwwroot", "Images"); 
 
-            // Убедитесь, что папка существует
             if (!Directory.Exists(uploadPath))
             {
                 Directory.CreateDirectory(uploadPath);
@@ -107,49 +98,38 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
             var filePath = Path.Combine(uploadPath, newFileName);
 
-            // Сохраняем файл на диск
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 await formFile.CopyToAsync(stream);
             }
 
-            // Возвращаем URL файла
             return ResponseData<string>.Success($"/Images/{newFileName}");
         }
 
-
-        public async Task<ResponseData<ListModel<Dish>>> GetProductListAsync(
-      string? categoryNormalizedName,
-      int pageNo = 1,
-      int pageSize = 3)
+        public async Task<ResponseData<ListModel<Dish>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1, int pageSize = 3)
         {
             if (pageSize > _maxPageSize)
                 pageSize = _maxPageSize;
 
-            // Инициализируем запрос, включая загрузку связанных категорий
             var query = _context.Dishes
-                                .Include(d => d.Category)  // Загрузка категорий
+                                .Include(d => d.Category)  
                                 .AsQueryable();
 
             var dataList = new ListModel<Dish>();
 
-            // Фильтруем по категории, если указано
             query = query.Where(d => categoryNormalizedName == null
                                      || d.Category.NormalizedName.Equals(categoryNormalizedName));
 
-            // Подсчитываем количество элементов
             var count = await query.CountAsync();
             if (count == 0)
             {
                 return ResponseData<ListModel<Dish>>.Success(dataList);
             }
 
-            // Рассчитываем количество страниц
             int totalPages = (int)Math.Ceiling(count / (double)pageSize);
             if (pageNo > totalPages)
                 return ResponseData<ListModel<Dish>>.Error("No such page");
 
-            // Выполняем запрос с постраничным выводом
             dataList.Items = await query
                 .OrderBy(d => d.Id)
                 .Skip((pageNo - 1) * pageSize)

@@ -33,11 +33,8 @@ namespace WEB_253503_Timoshevich.UI.Services.FileService
             {
                 await formFile.CopyToAsync(stream);
             }
-
-            // Возвращаем относительный путь к файлу
             return $"/Images/{newFileName}";
         }
-
 
         public async Task DeleteFileAsync(string fileName)
         {

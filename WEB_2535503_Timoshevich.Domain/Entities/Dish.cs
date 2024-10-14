@@ -8,7 +8,6 @@ namespace WEB_2535503_Timoshevich.Domain.Entities
 {
     public class Dish
     {
-        // Unique identifier
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

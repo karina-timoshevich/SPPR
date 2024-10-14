@@ -28,7 +28,7 @@ public class ApiProductService : IProductService
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
-        _fileService = fileService; // Внедрение IFileService
+        _fileService = fileService; 
         _logger = logger;
     }
 
@@ -43,7 +43,6 @@ public class ApiProductService : IProductService
             urlString.Append($"{categoryNormalizedName}/");
         }
 
-        // Формируем правильный URL для пагинации
         urlString.Append($"?pageNo={pageNo}");
 
         var response = await _httpClient.GetAsync(new Uri(urlString.ToString()));
@@ -65,17 +64,13 @@ public class ApiProductService : IProductService
         return ResponseData<ListModel<Dish>>.Error($"Данные не получены от сервера. Error: {response.StatusCode}");
     }
 
-
     public async Task<ResponseData<Dish>> CreateProductAsync(Dish product, IFormFile? formFile)
     {
-        // Первоначально используем картинку по умолчанию
         product.Image = "Images/noimage.jpg";
 
-        // Сохранить файл изображения, если он предоставлен
         if (formFile != null)
         {
             var imageUrl = await _fileService.SaveFileAsync(formFile);
-            // Добавить в объект URL изображения
             if (!string.IsNullOrEmpty(imageUrl))
                 product.Image = imageUrl;
         }
@@ -108,7 +103,6 @@ public class ApiProductService : IProductService
             }
         }
 
-        // Отправляем обновленные данные блюда на сервер
         var uri = new Uri(_httpClient.BaseAddress.AbsoluteUri + $"Dishes/{id}");
         var response = await _httpClient.PutAsJsonAsync(uri, product);
 
@@ -116,7 +110,6 @@ public class ApiProductService : IProductService
         {
             if (response.StatusCode == HttpStatusCode.NoContent)
             {
-                // Возвращаем локально обновленный объект, если сервер возвращает NoContent
                 return ResponseData<Dish>.Success(existingDishResponse.Data);
             }
 
@@ -128,7 +121,6 @@ public class ApiProductService : IProductService
 
     public async Task<ResponseData<Dish>> GetProductByIdAsync(int id)
     {
-        // Получите данные из вашего API
         var urlString = $"{_httpClient.BaseAddress.AbsoluteUri}dishes/{id}";
 
         var response = await _httpClient.GetAsync(urlString);
@@ -146,7 +138,7 @@ public class ApiProductService : IProductService
 
         if (response.IsSuccessStatusCode)
         {
-            return ResponseData<object>.Success(null); // Успешное удаление
+            return ResponseData<object>.Success(null); 
         }
 
         return ResponseData<object>.Error($"Ошибка удаления: {response.StatusCode}");

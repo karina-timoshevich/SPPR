@@ -16,8 +16,6 @@ namespace WEB_253503_Timoshevich.UI.Extensions
             // Регистрация HttpClient для IFileService
             builder.Services.AddHttpClient<IFileService, ApiFileService>(opt => opt.BaseAddress = new Uri($"{apiUri}Files"));
 
-          //  builder.Services.AddHttpClient<IFileService, ApiFileService>(opt => opt.BaseAddress = new Uri($"{UriData.ApiUri}Files"));
-
         }
     }
 }

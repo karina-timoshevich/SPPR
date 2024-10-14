@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
-using WEB_253503_Timoshevich.UI.Services.CategoryService; // Не забудьте этот using
+using WEB_253503_Timoshevich.UI.Services.CategoryService;
+using WEB_253503_Timoshevich.UI.Services.FileService;
 using WEB_2535503_Timoshevich.Domain.Entities;
 using System.Net.Http.Headers;
 
@@ -13,19 +14,21 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IFileService _fileService;
 
-        public CreateModel(IProductService productService, ICategoryService categoryService, IHttpClientFactory httpClientFactory)
+        public CreateModel(IProductService productService, ICategoryService categoryService, IHttpClientFactory httpClientFactory, IFileService fileService)
         {
             _productService = productService;
             _categoryService = categoryService;
             _httpClientFactory = httpClientFactory;
+            _fileService = fileService;
         }
 
         [BindProperty]
         public Dish Dish { get; set; } = new Dish();
 
         [BindProperty]
-        public IFormFile? Image { get; set; } // Используйте это свойство для файла изображения
+        public IFormFile? Image { get; set; } 
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -44,56 +47,50 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid) // Проверяем валидность модели
+            if (!ModelState.IsValid) 
             {
-                return Page(); // Возвращаем страницу с ошибками
+                return Page(); 
             }
 
-            // Проверяем, было ли загружено изображение
             if (Image != null)
             {
-                // Загружаем изображение и получаем URL
-                var imageUrl = await UploadImageToApiAsync(Image);
-                if (string.IsNullOrEmpty(imageUrl)) // Если загрузка не удалась
+               // var imageUrl = await UploadImageToApiAsync(Image);
+                var imageUrl = await _fileService.SaveFileAsync(Image);
+                if (string.IsNullOrEmpty(imageUrl))
                 {
-                    ModelState.AddModelError("", "Не удалось загрузить изображение."); // Добавляем ошибку
-                    return Page(); // Возвращаем страницу с ошибками
+                    ModelState.AddModelError("", "Не удалось загрузить изображение.");
+                    return Page(); 
                 }
-
-                // Устанавливаем URL изображения для объекта Dish
                 Dish.Image = imageUrl;
             }
 
-            // Создаем новый объект с использованием сервиса
             var response = await _productService.CreateProductAsync(Dish, Image);
-            if (response.Successfull) // Если создание прошло успешно
+            if (response.Successfull) 
             {
-                return RedirectToPage("./Index"); // Перенаправляем на страницу индекса
+                return RedirectToPage("./Index"); 
             }
 
-            // Если возникла ошибка при создании
             ModelState.AddModelError("", "Не удалось создать блюдо: " + response.ErrorMessage);
-            return Page(); // Возвращаем страницу с ошибками
+            return Page();
         }
         private async Task<string> UploadImageToApiAsync(IFormFile imageFile)
         {
             var client = _httpClientFactory.CreateClient();
-            var apiUrl = "https://localhost:7002/api/files"; // Укажите правильный URL API
+            var apiUrl = "https://localhost:7002/api/files";
 
             using var content = new MultipartFormDataContent();
             using var fileStreamContent = new StreamContent(imageFile.OpenReadStream());
             fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue(imageFile.ContentType);
             content.Add(fileStreamContent, "file", imageFile.FileName);
-
             var response = await client.PostAsync(apiUrl, content);
 
             if (response.IsSuccessStatusCode)
             {
                 var imageUrl = await response.Content.ReadAsStringAsync();
-                return imageUrl.Trim('"'); // Возвращаем URL изображения
+                return imageUrl.Trim('"'); 
             }
 
-            return string.Empty; // Если произошла ошибка, возвращаем пустую строку
+            return string.Empty; 
         }
 
     }

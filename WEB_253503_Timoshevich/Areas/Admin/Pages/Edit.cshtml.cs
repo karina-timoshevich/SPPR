@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
-using WEB_253503_Timoshevich.UI.Services.FileService; // Добавляем для использования IFileService
+using WEB_253503_Timoshevich.UI.Services.FileService; 
 using WEB_2535503_Timoshevich.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 
@@ -14,20 +14,20 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-        private readonly IFileService _fileService; // Добавляем IFileService
+        private readonly IFileService _fileService; 
 
         public EditModel(IProductService productService, ICategoryService categoryService, IFileService fileService)
         {
             _productService = productService;
             _categoryService = categoryService;
-            _fileService = fileService; // Инициализируем IFileService
+            _fileService = fileService; 
         }
 
         [BindProperty]
         public Dish Dish { get; set; } = new Dish();
 
         [BindProperty]
-        public IFormFile? Upload { get; set; } // Для загрузки изображения
+        public IFormFile? Upload { get; set; } 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -44,7 +44,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
 
             Dish = response.Data;
 
-            // Получаем категории для выбора
             var categoriesResponse = await _categoryService.GetCategoryListAsync();
             ViewData["CategoryId"] = new SelectList(categoriesResponse.Data, "Id", "Name");
 
@@ -74,12 +73,10 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
                     return Page();
                 }
 
-                Dish.Image = imageUrl; // Обновляем путь к изображению
+                Dish.Image = imageUrl; 
             }
 
-
-            // Вызываем метод обновления, передавая Upload, если он есть
-            var response = await _productService.UpdateProductAsync(Dish.Id, Dish, Upload); // Передаем Upload в метод обновления
+            var response = await _productService.UpdateProductAsync(Dish.Id, Dish, Upload); 
             if (!response.Successfull)
             {
                 ModelState.AddModelError("", "Не удалось обновить блюдо: " + response.ErrorMessage);
@@ -88,7 +85,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
 
             return RedirectToPage("./Index");
         }
-
 
     }
 }
