@@ -37,6 +37,7 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
             existingProduct.CategoryId = product.CategoryId;
+            existingProduct.Category = product.Category;
             existingProduct.Calories = product.Calories;
 
             // Обновляем изображение, если оно изменилось
@@ -116,38 +117,48 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
 
         public async Task<ResponseData<ListModel<Dish>>> GetProductListAsync(
-        string? categoryNormalizedName,
-        int pageNo = 1,
-        int pageSize = 3)
+      string? categoryNormalizedName,
+      int pageNo = 1,
+      int pageSize = 3)
         {
             if (pageSize > _maxPageSize)
                 pageSize = _maxPageSize;
-            var query = _context.Dishes.AsQueryable();
+
+            // Инициализируем запрос, включая загрузку связанных категорий
+            var query = _context.Dishes
+                                .Include(d => d.Category)  // Загрузка категорий
+                                .AsQueryable();
+
             var dataList = new ListModel<Dish>();
-            query = query
-            .Where(d => categoryNormalizedName == null
-            ||
-            d.Category.NormalizedName.Equals(categoryNormalizedName));
-            // количество элементов в списке
-            var count = await query.CountAsync(); //.Count();
+
+            // Фильтруем по категории, если указано
+            query = query.Where(d => categoryNormalizedName == null
+                                     || d.Category.NormalizedName.Equals(categoryNormalizedName));
+
+            // Подсчитываем количество элементов
+            var count = await query.CountAsync();
             if (count == 0)
             {
                 return ResponseData<ListModel<Dish>>.Success(dataList);
             }
-            // количество страниц
+
+            // Рассчитываем количество страниц
             int totalPages = (int)Math.Ceiling(count / (double)pageSize);
             if (pageNo > totalPages)
                 return ResponseData<ListModel<Dish>>.Error("No such page");
+
+            // Выполняем запрос с постраничным выводом
             dataList.Items = await query
-            .OrderBy(d => d.Id)
-            .Skip((pageNo - 1) * pageSize)
-            .Take(pageSize)
-            .ToListAsync();
+                .OrderBy(d => d.Id)
+                .Skip((pageNo - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
             dataList.CurrentPage = pageNo;
             dataList.TotalPages = totalPages;
+
             return ResponseData<ListModel<Dish>>.Success(dataList);
         }
+
     }
-
-
 }

@@ -37,6 +37,7 @@ public class ApiProductService : IProductService
     {
         var urlString = new StringBuilder($"{_httpClient.BaseAddress.AbsoluteUri}dishes/");
 
+
         if (!string.IsNullOrEmpty(categoryNormalizedName))
         {
             urlString.Append($"{categoryNormalizedName}/");
