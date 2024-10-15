@@ -22,12 +22,12 @@ public static class DbInitializer
 
         var categories = new Category[]
         {
-            new Category {Id=1, Name="Стартеры", NormalizedName="starters"},
-            new Category {Id=2, Name="Салаты", NormalizedName="salads"},
-            new Category {Id=3, Name="Супы", NormalizedName="soups"},
-            new Category {Id=4, Name="Основные блюда", NormalizedName="main-dishes"},
-            new Category {Id=5, Name="Напитки", NormalizedName="drinks"},
-            new Category {Id=6, Name="Десерты", NormalizedName="desserts"}
+            new Category {Name="Стартеры", NormalizedName="starters"},
+            new Category {Name="Салаты", NormalizedName="salads"},
+            new Category {Name="Супы", NormalizedName="soups"},
+            new Category {Name="Основные блюда", NormalizedName="main-dishes"},
+            new Category {Name="Напитки", NormalizedName="drinks"},
+            new Category {Name="Десерты", NormalizedName="desserts"}
         };
 
         context.Categories.AddRange(categories);

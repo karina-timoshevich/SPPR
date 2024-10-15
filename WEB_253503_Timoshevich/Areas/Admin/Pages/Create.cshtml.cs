@@ -73,25 +73,6 @@ namespace WEB_253503_Timoshevich.UI.Areas.Admin.Pages
             ModelState.AddModelError("", "Не удалось создать блюдо: " + response.ErrorMessage);
             return Page();
         }
-        private async Task<string> UploadImageToApiAsync(IFormFile imageFile)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var apiUrl = "https://localhost:7002/api/files";
-
-            using var content = new MultipartFormDataContent();
-            using var fileStreamContent = new StreamContent(imageFile.OpenReadStream());
-            fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue(imageFile.ContentType);
-            content.Add(fileStreamContent, "file", imageFile.FileName);
-            var response = await client.PostAsync(apiUrl, content);
-
-            if (response.IsSuccessStatusCode)
-            {
-                var imageUrl = await response.Content.ReadAsStringAsync();
-                return imageUrl.Trim('"'); 
-            }
-
-            return string.Empty; 
-        }
-
+    
     }
 }
