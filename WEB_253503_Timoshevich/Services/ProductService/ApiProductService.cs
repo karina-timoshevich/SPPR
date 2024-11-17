@@ -10,6 +10,7 @@ using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_253503_Timoshevich.UI.Services.FileService;
 using System.Net;
 using Microsoft.EntityFrameworkCore;
+using WEB_253503_Timoshevich.UI.Services.Authentication;
 
 public class ApiProductService : IProductService
 {
@@ -17,10 +18,11 @@ public class ApiProductService : IProductService
     private readonly string _pageSize;
     private readonly JsonSerializerOptions _serializerOptions;
     private readonly ILogger<ApiProductService> _logger;
+    private ITokenAccessor _tokenAccessor;
 
     private readonly IFileService _fileService;
 
-    public ApiProductService(HttpClient httpClient, IConfiguration configuration, IFileService fileService, ILogger<ApiProductService> logger)
+    public ApiProductService(HttpClient httpClient, IConfiguration configuration, IFileService fileService, ILogger<ApiProductService> logger, ITokenAccessor tokenAccessor)
     {
         _httpClient = httpClient;
         _pageSize = configuration.GetSection("ItemsPerPage").Value;
@@ -30,6 +32,7 @@ public class ApiProductService : IProductService
         };
         _fileService = fileService; 
         _logger = logger;
+        _tokenAccessor = tokenAccessor;
     }
 
 
@@ -44,6 +47,7 @@ public class ApiProductService : IProductService
         }
 
         urlString.Append($"?pageNo={pageNo}");
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 
         var response = await _httpClient.GetAsync(new Uri(urlString.ToString()));
 
@@ -76,6 +80,7 @@ public class ApiProductService : IProductService
         }
 
         var uri = new Uri(_httpClient.BaseAddress.AbsoluteUri + "Dishes");
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var response = await _httpClient.PostAsJsonAsync(uri, product, _serializerOptions);
 
         if (response.IsSuccessStatusCode)
@@ -104,6 +109,7 @@ public class ApiProductService : IProductService
         }
 
         var uri = new Uri(_httpClient.BaseAddress.AbsoluteUri + $"Dishes/{id}");
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var response = await _httpClient.PutAsJsonAsync(uri, product);
 
         if (response.IsSuccessStatusCode)
@@ -122,6 +128,7 @@ public class ApiProductService : IProductService
     public async Task<ResponseData<Dish>> GetProductByIdAsync(int id)
     {
         var urlString = $"{_httpClient.BaseAddress.AbsoluteUri}dishes/{id}";
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 
         var response = await _httpClient.GetAsync(urlString);
         if (response.IsSuccessStatusCode)
@@ -134,6 +141,7 @@ public class ApiProductService : IProductService
     public async Task<ResponseData<object>> DeleteProductAsync(int id)
     {
         var uri = new Uri(_httpClient.BaseAddress.AbsoluteUri + $"Dishes/{id}");
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var response = await _httpClient.DeleteAsync(uri);
 
         if (response.IsSuccessStatusCode)

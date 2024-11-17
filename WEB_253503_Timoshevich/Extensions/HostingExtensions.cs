@@ -2,6 +2,8 @@
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
 using WEB_253503_Timoshevich.UI.Services.FileService;
 using WEB_253503_Timoshevich.UI.Models;
+using WEB_253503_Timoshevich.UI.HelperClasses;
+using WEB_253503_Timoshevich.UI.Services.Authentication;
 
 namespace WEB_253503_Timoshevich.UI.Extensions
 {
@@ -14,8 +16,10 @@ namespace WEB_253503_Timoshevich.UI.Extensions
             var apiUri = builder.Configuration.GetSection("UriData").GetValue<string>("ApiUri");
 
             // Регистрация HttpClient для IFileService
-            builder.Services.AddHttpClient<IFileService, ApiFileService>(opt => opt.BaseAddress = new Uri($"{apiUri}Files"));
 
+            builder.Services.AddHttpClient<IFileService, ApiFileService>(opt => opt.BaseAddress = new Uri($"{apiUri}Files"));
+            builder.Services.Configure<KeycloakData>(builder.Configuration.GetSection("Keycloak"));
+            builder.Services.AddHttpClient<ITokenAccessor, KeycloakTokenAccessor>();
         }
     }
 }

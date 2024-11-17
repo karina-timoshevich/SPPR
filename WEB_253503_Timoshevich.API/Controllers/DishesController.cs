@@ -73,7 +73,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
             return NoContent();
         }
         [HttpPut("{id:int}")]
-        [Authorize(Policy = "admin")] 
+       // [Authorize(Policy = "admin")] 
         public async Task<IActionResult> UpdateDish(int id, Dish dish)
         {
             if (id != dish.Id)
