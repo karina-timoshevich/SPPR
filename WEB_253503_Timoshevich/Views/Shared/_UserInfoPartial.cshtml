@@ -1,30 +1,54 @@
 ﻿ <!-- Информация пользователя -->
-@await Component.InvokeAsync("Cart")
-<div class="dropdown ms-4 nav-color">
-    <button class="btn btn-secondary dropdown-toggle"
-            type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-        User@gmail.com
-        <img src="Images/cat_icon.png" width="30"
-             alt="User" class="rounded nav-color" />
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li>
-            <span class="dropdown-item-text">
-                <img src="Images/cat_icon.png"
-                     width="50" alt="User" class="rounded" />
-                user@gmail.com
-            </span>
-        </li>
-        <li><hr class="dropdown-divider"></li>
-        <li>
-            <form id="logoutForm" class="form-inline">
-                <button id="logout" type="submit" class="nav-link btn btn-link text-dark" asp-controller="Account" asp-action="LogOut">
-                    Logout
-                </button>
-            </form>
-        </li>
-    </ul>
-</div>
+@{
+    var isAuthenticated = User.Identity!.IsAuthenticated;
+    var name = User.Claims
+        .FirstOrDefault(c => c.Type.Equals("preferred_username",
+            StringComparison.OrdinalIgnoreCase))?
+        .Value;
+    var avatar = User.Claims
+        .FirstOrDefault(c => c.Type.Equals("avatar",
+            StringComparison.OrdinalIgnoreCase))?
+        .Value;
+}
+
+@if (isAuthenticated)
+{
+    @await Component.InvokeAsync("Cart")
+
+    <div class="dropdown ms-4 nav-color">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-expanded="false">
+            @name
+            <img src="@avatar" width="30" alt="User" class="rounded nav-color" />
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                <span class="dropdown-item-text">
+                    <img src="@avatar" width="50" alt="User" class="rounded" />
+                    @name
+                </span>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <form asp-area="" asp-controller="Account" asp-action="Logout" asp-protocol="https"
+                      asp-host="localhost:7001" method="post" class="d-inline">
+                    <button type="submit" class="nav-link btn btn-link text-dark">Log out</button>
+                </form>
+                @* <form id="logoutForm" class="form-inline" method="post"> *@
+                @*     <a asp-controller="Account" asp-action="Logout" class="nav-link btn btn-link text-dark">LogOut</a> *@
+                @*     $1$ <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button> #1# *@
+                @* </form> *@
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <div class="dropdown ms-4 nav-color">
+        <a class="navbar-text p-2" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="navbar-text p-2" asp-controller="Account" asp-action="Register">Register</a>
+    </div>
+}
 <!-- Информация пользователя - конец -->

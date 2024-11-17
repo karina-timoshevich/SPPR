@@ -10,6 +10,7 @@ namespace WEB_253503_Timoshevich.UI.Controllers
 
     public class AccountController : Controller
     {
+
         public IActionResult Register()
         {
             return View(new RegisterUserViewModel());
@@ -39,10 +40,10 @@ namespace WEB_253503_Timoshevich.UI.Controllers
             return View(user);
         }
 
-        //public IActionResult Login()
-        //{
-        //    return View(new LoginUserViewModel());
-        //}
+        public IActionResult Login()
+        {
+            return View(new LoginUserViewModel());
+        }
 
         public async Task LoginHandler()
         {
