@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB_253503_Timoshevich.API.Services.ProductService;
 using WEB_2535503_Timoshevich.Domain.Entities;
@@ -20,6 +21,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
 
         // GET: api/Dishes/main-dishes?pageno=2
         [HttpGet("{category}")]
+        [AllowAnonymous]
         public async Task<ActionResult<ResponseData<List<Dish>>>> GetDishes(string category, int pageNo = 1, int pageSize = 3)
         {
             var response = await _productService.GetProductListAsync(category, pageNo, pageSize);
@@ -28,6 +30,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
 
         // GET: api/Dishes/5
         [HttpGet("{id:int}")]
+        [AllowAnonymous] 
         public async Task<ActionResult<ResponseData<Dish>>> GetDish(int id)
         {
             var response = await _productService.GetProductByIdAsync(id);
@@ -40,6 +43,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
 
         // POST: api/Dishes
         [HttpPost]
+        [Authorize(Policy = "admin")] 
         public async Task<ActionResult<ResponseData<Dish>>> PostDish(Dish dish)
         {
             var response = await _productService.CreateProductAsync(dish);
@@ -47,6 +51,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
         }
         // GET: api/Dishes
         [HttpGet]
+        [AllowAnonymous] 
         public async Task<ActionResult<ResponseData<List<Dish>>>> GetAllDishes(int pageNo = 1, int pageSize = 3)
         {
             var response = await _productService.GetProductListAsync(null, pageNo, pageSize);
@@ -56,6 +61,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
 
         // DELETE: api/Dishes/5
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "admin")] 
         public async Task<IActionResult> DeleteDish(int id)
         {
             var response = await _productService.DeleteProductAsync(id);
@@ -67,6 +73,7 @@ namespace WEB_253503_Timoshevich.API.Controllers
             return NoContent();
         }
         [HttpPut("{id:int}")]
+        [Authorize(Policy = "admin")] 
         public async Task<IActionResult> UpdateDish(int id, Dish dish)
         {
             if (id != dish.Id)
