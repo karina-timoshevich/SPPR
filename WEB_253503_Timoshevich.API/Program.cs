@@ -48,8 +48,6 @@ builder.Services.AddAuthorization(opt =>
 
 var app = builder.Build();
 
-app.UseAuthentication();
-app.UseAuthorization();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -57,6 +55,8 @@ if (app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

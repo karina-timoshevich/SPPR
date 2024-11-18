@@ -46,10 +46,10 @@ builder.Services
     options.ClientId = keycloakData.ClientId;
     options.ClientSecret = keycloakData.ClientSecret;
     options.ResponseType = OpenIdConnectResponseType.Code;
-    options.Scope.Add("openid"); // Customize scopes as needed
+    options.Scope.Add(OpenIdConnectScope.OpenId); // Customize scopes as needed
     options.SaveTokens = true;
     options.RequireHttpsMetadata = false; // позволяет обращаться к локальному Keycloak по http
-options.MetadataAddress = $"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
+    options.MetadataAddress = $"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
 });
 
 builder.Services.AddAuthorization(opt =>
