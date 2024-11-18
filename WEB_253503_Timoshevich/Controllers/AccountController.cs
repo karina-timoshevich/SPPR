@@ -40,20 +40,26 @@ namespace WEB_253503_Timoshevich.UI.Controllers
             return View(user);
         }
 
-        public IActionResult Login()
+        public async Task Login()
         {
-            return View(new LoginUserViewModel());
+          //  return View(new LoginUserViewModel());
+            await HttpContext.ChallengeAsync(OpenIdConnectDefaults.AuthenticationScheme,
+              new AuthenticationProperties
+              {
+                  RedirectUri = Url.Action("Index", "Home")
+              }
+          );
         }
 
-        public async Task LoginHandler()
-        {
-            await HttpContext.ChallengeAsync(OpenIdConnectDefaults.AuthenticationScheme,
-                new AuthenticationProperties
-                {
-                    RedirectUri = Url.Action("Index", "Home")
-                }
-            );
-        }
+        //public async Task LoginHandler()
+        //{
+        //    await HttpContext.ChallengeAsync(OpenIdConnectDefaults.AuthenticationScheme,
+        //        new AuthenticationProperties
+        //        {
+        //            RedirectUri = Url.Action("Index", "Home")
+        //        }
+        //    );
+        //}
 
         [HttpPost]
         public async Task Logout()
