@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using WEB_253503_Timoshevich.UI.Extensions;
 using WEB_253503_Timoshevich.UI.Services.CategoryService;
 using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_2535503_Timoshevich.Domain.Entities;
@@ -37,8 +38,13 @@ public class ProductController : Controller
         ViewData["currentCategoryNormalizedName"] = category;
 
         ViewBag.Categories = categoriesResponse.Data;
+        // Проверка на AJAX-запрос
+        if (Request.IsAjaxRequest())
+        {
+            return PartialView("~/Views/Shared/Components/Dish/_DishListPartial.cshtml", productResponse.Data);
+        }
 
-        return View(productResponse.Data); 
+        return View(productResponse.Data);
     }
 
 }

@@ -1,6 +1,56 @@
 ﻿@model WEB_2535503_Timoshevich.Domain.Models.ListModel<WEB_2535503_Timoshevich.Domain.Entities.Dish>
 
 @{
+    ViewBag.Title = "Index";
+    var request = ViewContext.HttpContext.Request;
+    var returnUrl = request.Path + request.QueryString.ToUriComponent();
+}
+
+<!-- Выбор категории -->
+<div class="col-2">
+    <ul class="nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                @ViewData["currentCategoryName"]
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="@null">Все</a>
+                </li>
+                @if (ViewBag.Categories != null)
+                {
+                    foreach (var item in ViewBag.Categories)
+                    {
+                        <li>
+                            <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-category="@item.NormalizedName">
+                                @item.Name
+                            </a>
+                        </li>
+                    }
+                }
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- Контейнер для AJAX-загрузки -->
+<div id="partial_container">
+    @await Html.PartialAsync("Components/Dish/_DishListPartial", Model)
+</div>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/site.js"></script>
+}
+
+
+
+
+
+
+@* @model WEB_2535503_Timoshevich.Domain.Models.ListModel<WEB_2535503_Timoshevich.Domain.Entities.Dish>
+
+@{
     var request = ViewContext.HttpContext.Request;
     var returnUrl = request.Path + request.QueryString.ToUriComponent();
 }
@@ -85,3 +135,4 @@
 </nav>
 
 
+ *@
