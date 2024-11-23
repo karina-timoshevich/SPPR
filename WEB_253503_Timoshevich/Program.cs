@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using System.Configuration;
 using WEB_253503_Timoshevich.UI.HelperClasses;
+using WEB_2535503_Timoshevich.Domain.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var uriData = builder.Configuration.GetSection("UriData").Get<UriData>();
@@ -29,7 +30,14 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(builder
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var keycloakData = builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
 builder.Services
@@ -75,9 +83,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
+
 app.UseAuthentication(); 
 app.UseAuthorization();
-
 
 app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();

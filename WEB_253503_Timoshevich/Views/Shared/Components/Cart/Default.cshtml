@@ -1,5 +1,11 @@
-﻿@model dynamic
+﻿@model WEB_2535503_Timoshevich.Domain.Models.Cart
+
+@{
+    var totalCount = Model?.Count ?? 0;
+    var totalPrice = Model?.TotalPrice ?? 0.0;
+}
+
 <a asp-controller="Cart" asp-action="Index" class="navbar-text ms-auto">
-    @Model.TotalPrice руб
-    <i class="fa-solid fa-cart-shopping"></i> (@Model.ItemsCount)
+    @totalPrice руб
+    <i class="fa-solid fa-cart-shopping"></i> (@totalCount)
 </a>

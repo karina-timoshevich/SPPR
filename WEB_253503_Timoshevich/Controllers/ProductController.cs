@@ -6,6 +6,7 @@ using WEB_253503_Timoshevich.UI.Services.ProductService;
 using WEB_2535503_Timoshevich.Domain.Entities;
 using WEB_2535503_Timoshevich.Domain.Models;
 
+[Route("Catalog")]
 public class ProductController : Controller
 {
     private readonly IProductService _productService;
@@ -16,6 +17,8 @@ public class ProductController : Controller
         _productService = productService;
         _categoryService = categoryService;
     }
+    [Route("")] // Маршрут для localhost:хххх/Catalog
+    [Route("{category?}")] // Маршрут для localhost:хххх/Catalog/имя_категории
 
     public async Task<IActionResult> Index(string? category, int pageNo = 1)
     {
