@@ -12,8 +12,24 @@ using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using System.Configuration;
 using WEB_253503_Timoshevich.UI.HelperClasses;
 using WEB_2535503_Timoshevich.Domain.Models;
+using Serilog;
+using Serilog.Events;
+using WEB_253503_Timoshevich.UI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddSerilog();
+
+builder.Host.UseSerilog();
+
+Log.Logger.Information("[Started logging...]");
+
 var uriData = builder.Configuration.GetSection("UriData").Get<UriData>();
 builder.Services.AddHttpClient<IProductService, ApiProductService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
 builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
@@ -67,7 +83,8 @@ builder.Services.AddAuthorization(opt =>
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
-
+app.UseMiddleware<LoggerMiddleware>();
+app.UseSerilogRequestLogging();
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
@@ -88,7 +105,10 @@ app.UseSession();
 app.UseAuthentication(); 
 app.UseAuthorization();
 
-app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();
