@@ -1,0 +1,55 @@
+﻿@page "/counter"
+@page "/counter/{InitialValue:int}"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+
+<h3>Counter</h3>
+
+<EditForm Model="@counterModel" OnValidSubmit="SetCounter">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Enter a value: </label>
+        <InputNumber @bind-Value="counterModel.CounterValue" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Set</button>
+</EditForm>
+
+<p role="status">Current count: @currentCount</p>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    [Parameter]
+    public int? InitialValue { get; set; } // Параметр для начального значения счётчика из строки запроса
+
+    private int currentCount = 0;
+
+    private CounterModel counterModel = new();
+
+    protected override void OnParametersSet()
+    {
+        if (InitialValue.HasValue)
+        {
+            counterModel.CounterValue = InitialValue.Value;
+            currentCount = InitialValue.Value;
+        }
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void SetCounter()
+    {
+        currentCount = counterModel.CounterValue;
+    }
+
+    public class CounterModel
+    {
+        [Range(1, 10, ErrorMessage = "Value must be between 1 and 10.")]
+        public int CounterValue { get; set; }
+    }
+}
