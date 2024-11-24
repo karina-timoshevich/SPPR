@@ -1,0 +1,58 @@
+﻿@using WEB_2535503_Timoshevich.Domain.Entities
+@inject IDataService DataService
+
+<div>
+    @if (DataService.Categories == null || DataService.Categories.Count == 0)
+    {
+        <p>Категории не загружены или пусты</p>
+    }
+    else
+    {
+        <p>Загружено категорий: @DataService.Categories.Count</p>
+    }
+</div>
+
+<div class="dropdown">
+    <!-- Кнопка с текущей выбранной категорией -->
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        @SelectedCategory?.Name ?? "Выберите категорию"  <!-- Показываем выбранную категорию или текст "Выберите категорию" -->
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+        <!-- Перебираем все категории и выводим их в списке -->
+        @foreach (var category in DataService.Categories)
+        {
+            <li>
+                <button class="dropdown-item" @onclick="() => SelectCategory(category)">
+                    @category.Name
+                </button>
+            </li>
+        }
+    </ul>
+</div>
+
+
+@code {
+    private Category? SelectedCategory;
+
+    // Метод для выбора категории
+    private async Task SelectCategory(Category category)
+    {
+        SelectedCategory = category;  // Устанавливаем выбранную категорию
+        DataService.SelectedCategory = category;  // Обновляем выбранную категорию в сервисе
+        await DataService.GetProductListAsync(1);  // Перезагружаем список продуктов для выбранной категории
+    }
+
+    // Инициализация компонента и загрузка категорий, если они еще не загружены
+    protected override void OnInitialized()
+    {
+        if (!DataService.Categories.Any())
+        {
+            DataService.GetCategoryListAsync();  // Загружаем список категорий
+            DataService.DataLoaded += StateHasChanged;
+        }
+    }
+    public void Dispose()
+    {
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

@@ -1,8 +1,10 @@
 ﻿@page "/menu"
 <PageTitle>Menu</PageTitle>
 
-<DishesList />
+<h3>Меню дня</h3>
 
+<CategorySelector /> <!-- Добавляем компонент выбора категории -->
+<DishesList /> <!-- Отображаем список объектов -->
 @code {
     [Inject] public IDataService DataService { get; set; }
 

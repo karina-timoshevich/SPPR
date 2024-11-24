@@ -91,10 +91,10 @@ namespace WEB_253503_Timoshevich.BlazorWasm.Services
                 }
 
                 var queryData = new List<KeyValuePair<string, string>>
-        {
-            KeyValuePair.Create("pageNo", pageNo.ToString()),
-            KeyValuePair.Create("pageSize", _pageSize.ToString())
-        };
+            {
+                KeyValuePair.Create("pageNo", pageNo.ToString()),
+                KeyValuePair.Create("pageSize", _pageSize.ToString())
+            };
 
                 var url = QueryHelpers.AddQueryString(route.ToString(), queryData);
                 var response = await _httpClient.GetFromJsonAsync<ResponseData<ListModel<Dish>>>($"{_baseUrl}{url}");
@@ -132,6 +132,8 @@ namespace WEB_253503_Timoshevich.BlazorWasm.Services
                 {
                     Categories = response.Data ?? new List<Category>();
                     Success = true;
+                    Console.WriteLine($"Categories loaded: {Categories.Count}");  // Выводим количество загруженных категорий в консоль
+
                 }
                 else
                 {
