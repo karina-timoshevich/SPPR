@@ -42,8 +42,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     o.Authority = $"{authServer.Host}/realms/{authServer.Realm}";
     // Audience дл€ токена JWT
     o.Audience = "account";
-    // «апретить HTTPS дл€ использовани€ локальной версии Keycloak
-    // ¬ рабочем проекте должно быть true
     o.RequireHttpsMetadata = false;
 });
 

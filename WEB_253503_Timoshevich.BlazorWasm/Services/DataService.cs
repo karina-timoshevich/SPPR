@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.WebUtilities;
+﻿using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+using Microsoft.AspNetCore.WebUtilities;
 using System.Net.Http.Json;
 using System.Text;
 
@@ -13,6 +14,7 @@ namespace WEB_253503_Timoshevich.BlazorWasm.Services
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
         private readonly int _pageSize;
+        private readonly IAccessTokenProvider _tokenProvider;
 
         public event Action DataLoaded;
 
@@ -24,15 +26,34 @@ namespace WEB_253503_Timoshevich.BlazorWasm.Services
         public int CurrentPage { get; set; }
         public Category SelectedCategory { get; set; }
 
-        public DataService(HttpClient httpClient, IConfiguration configuration)
+        public DataService(HttpClient httpClient, IConfiguration configuration, IAccessTokenProvider tokenProvider)
         {
             _httpClient = httpClient;
             _baseUrl = configuration["UriData:ApiUri"] ?? throw new InvalidOperationException("API URL not configured");
             _pageSize = int.Parse(configuration["ItemsPerPage"] ?? "3");
+            _tokenProvider = tokenProvider;
+        }
+        private async Task<bool> AttachAccessTokenAsync()
+        {
+            var tokenRequest = await _tokenProvider.RequestAccessToken();
+            if (tokenRequest.TryGetToken(out var token))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.Value);
+                return true;
+            }
+
+            return false;
         }
 
         public async Task GetAllProductsAsync()
         {
+            if (!await AttachAccessTokenAsync())
+            {
+                ErrorMessage = "Access denied. Please log in.";
+                Success = false;
+                return;
+            }
+
             try
             {
                 var response = await _httpClient.GetFromJsonAsync<ResponseData<List<Dish>>>($"{_baseUrl}dishes/all");
@@ -57,6 +78,7 @@ namespace WEB_253503_Timoshevich.BlazorWasm.Services
                 Success = false;
             }
         }
+
 
         public async Task GetProductListAsync(int pageNo = 1)
         {
