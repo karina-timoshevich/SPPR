@@ -2,65 +2,32 @@
 @using System.Text.Json
 @using WEB_2535503_Timoshevich.Domain.Entities
 @using WEB_2535503_Timoshevich.Domain.Models
-
-
-@inject HttpClient Http
+@inject IDataService DataService
 
 <h3>Dishes</h3>
 
-@if (IsLoading)
+@if (DataService.Dishes == null || DataService.Dishes.Count == 0)
 {
-    <p>Loading...</p>
+    <p>No dishes available.</p>
 }
-else if (!string.IsNullOrEmpty(ErrorMessage))
-{
-    <p class="text-danger">@ErrorMessage</p>
-}
-else if (Dishes != null && Dishes.Any())
+else
 {
     <ul>
-        @foreach (var dish in Dishes)
+        @foreach (var dish in DataService.Dishes)
         {
             <li>@dish.Name (@dish.Category?.Name)</li>
         }
     </ul>
 }
-else
+
+@if (!string.IsNullOrEmpty(DataService.ErrorMessage))
 {
-    <p>No dishes available.</p>
+    <p class="text-danger">@DataService.ErrorMessage</p>
 }
 
 @code {
-    private List<Dish>? Dishes;
-    private bool IsLoading = true;
-    private string? ErrorMessage;
-
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            IsLoading = true;
-
-            // Вызов нового метода API
-            var response = await Http.GetFromJsonAsync<ResponseData<List<Dish>>>("https://localhost:7002/api/dishes/all");
-
-            if (response?.Successfull == true && response.Data != null)
-            {
-                Dishes = response.Data;
-            }
-            else
-            {
-                ErrorMessage = response?.ErrorMessage ?? "No dishes found.";
-            }
-        }
-        catch (Exception ex)
-        {
-            ErrorMessage = $"Error loading dishes: {ex.Message}";
-        }
-        finally
-        {
-            IsLoading = false;
-        }
+        await DataService.GetAllProductsAsync();
     }
 }
-
