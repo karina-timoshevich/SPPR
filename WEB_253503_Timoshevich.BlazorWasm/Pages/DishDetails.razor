@@ -1,0 +1,22 @@
+﻿@using WEB_2535503_Timoshevich.Domain.Entities
+
+<h3>Подробная информация о блюде</h3>
+
+@if (SelectedDish != null)
+{
+    <div>
+        <p>Название: @SelectedDish.Name</p>
+        <p>Описание: @SelectedDish.Description</p>
+        <p>Цена: @SelectedDish.Price</p>
+        <p>Калории: @SelectedDish.Calories</p>
+        <p>Категория: @SelectedDish.Category?.Name</p>
+    </div>
+}
+else
+{
+    <p>Выберите блюдо для просмотра подробной информации.</p>
+}
+
+@code {
+    [Parameter] public Dish? SelectedDish { get; set; }
+}

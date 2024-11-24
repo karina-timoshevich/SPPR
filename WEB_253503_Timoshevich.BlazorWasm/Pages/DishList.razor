@@ -18,7 +18,11 @@
             <ul>
                 @foreach (var dish in DataService.Dishes)
                 {
-                    <li>@dish.Name (@dish.Category?.Name)</li>
+                    <li>
+                        @dish.Name (@dish.Category?.Name)
+                        <!-- При клике передаем dish в компонент DishDetails -->
+                        <button @onclick="() => DishSelected(dish.Id)">Подробнее</button>
+                    </li>
                 }
             </ul>
         }
@@ -32,10 +36,18 @@
         <p class="text-warning">You are not authorized to view this page. Please log in.</p>
     </NotAuthorized>
 </AuthorizeView>
-
+<DishDetails SelectedDish="SelectedDish" />
 @code {
+    private Dish? SelectedDish;  // Выбранное блюдо
+
     protected override async Task OnInitializedAsync()
     {
-        await DataService.GetAllProductsAsync();
+        await DataService.GetAllProductsAsync();  // Загружаем список блюд
+    }
+
+    private void DishSelected(int dishId)
+    {
+        // Находим выбранное блюдо по ID и передаем его в компонент DishDetails
+        SelectedDish = DataService.Dishes.FirstOrDefault(d => d.Id == dishId);
     }
 }

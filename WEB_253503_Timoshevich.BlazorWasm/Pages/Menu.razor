@@ -1,16 +1,19 @@
-﻿@page "/menu"
-<PageTitle>Menu</PageTitle>
-
+﻿page "/menu"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
 <h3>Меню дня</h3>
-
-<CategorySelector /> <!-- Добавляем компонент выбора категории -->
-<DishesList /> <!-- Отображаем список объектов -->
+<CategorySelector />
+<DishesList />
+<Pager />
 @code {
     [Inject] public IDataService DataService { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        // Загружаем список блюд при инициализации страницы
-        await DataService.GetProductListAsync(1);
+        if (!DataService.Categories.Any())
+        {
+            await DataService.GetCategoryListAsync();  // Загружаем список категорий
+            StateHasChanged(); // Принудительное обновление компонента
+        }
     }
 }

@@ -10,21 +10,25 @@
     {
         <p>Загружено категорий: @DataService.Categories.Count</p>
     }
+    <!-- Выводим отладочную информацию -->
+    
 </div>
-
+<div>
+    <p>Текущая страница: @DataService.CurrentPage</p>
+    <p>Общее количество страниц: @DataService.TotalPages</p>
+</div>
 <div class="dropdown">
     <!-- Кнопка с текущей выбранной категорией -->
     <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-        @SelectedCategory?.Name ?? "Выберите категорию"  <!-- Показываем выбранную категорию или текст "Выберите категорию" -->
+        @((SelectedCategory != null) ? SelectedCategory.Name : "Выберите категорию")
     </button>
     <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-        <!-- Перебираем все категории и выводим их в списке -->
         @foreach (var category in DataService.Categories)
         {
             <li>
-                <button class="dropdown-item" @onclick="() => SelectCategory(category)">
+                <a class="dropdown-item" href="#" @onclick="() => SelectCategory(category)">
                     @category.Name
-                </button>
+                </a>
             </li>
         }
     </ul>
