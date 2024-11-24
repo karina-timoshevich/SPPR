@@ -7,6 +7,13 @@ using WEB_253503_Timoshevich.API.Services.CategoryService;
 using WEB_253503_Timoshevich.API.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorWasm",
+        policy => policy.WithOrigins("https://localhost:7196") // ”казываем порт Blazor WebAssembly
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+});
 
 
 builder.Services.AddControllers();
@@ -44,10 +51,10 @@ builder.Services.AddAuthorization(opt =>
 {
     opt.AddPolicy("admin", p => p.RequireRole("POWER-USER"));
 });
-
+builder.Services.AddControllers();
 
 var app = builder.Build();
-
+app.UseCors("AllowBlazorWasm");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

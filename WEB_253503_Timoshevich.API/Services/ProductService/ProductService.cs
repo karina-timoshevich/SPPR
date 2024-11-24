@@ -141,6 +141,22 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
 
             return ResponseData<ListModel<Dish>>.Success(dataList);
         }
+        public async Task<ResponseData<List<Dish>>> GetAllProductsAsync()
+        {
+            var dishes = await _context.Dishes
+                .Include(d => d.Category) // Подгрузить связанные категории
+                .OrderBy(d => d.Id) // Для упорядочивания
+                .ToListAsync();
+
+            if (dishes.Count == 0)
+            {
+                return ResponseData<List<Dish>>.Error("No dishes found");
+            }
+
+            return ResponseData<List<Dish>>.Success(dishes);
+        }
 
     }
+
+
 }

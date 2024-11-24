@@ -21,7 +21,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapRazorComponents<App>()
+app.MapRazorComponents<WEB_253503_Timoshevich.Blazor.SSR.Components.App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();

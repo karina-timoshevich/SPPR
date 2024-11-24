@@ -16,5 +16,7 @@ namespace WEB_253503_Timoshevich.API.Services.ProductService
         public Task<ResponseData<Dish>> CreateProductAsync(Dish product);
 
         public Task<ResponseData<string>> SaveImageAsync(int id, IFormFile formFile);
+
+        public Task<ResponseData<List<Dish>>> GetAllProductsAsync();
     }
 }
