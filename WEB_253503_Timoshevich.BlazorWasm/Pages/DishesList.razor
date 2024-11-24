@@ -1,0 +1,38 @@
+﻿@using WEB_2535503_Timoshevich.Domain.Entities
+@inject IDataService DataService
+@implements IDisposable
+
+<h3>Dishes</h3>
+
+@if (DataService.Dishes == null || DataService.Dishes.Count == 0)
+{
+    <p>No dishes available.</p>
+}
+else
+{
+    <ul>
+        @foreach (var dish in DataService.Dishes)
+        {
+            <li>@dish.Name (@dish.Category?.Name)</li>
+        }
+    </ul>
+}
+
+@if (!string.IsNullOrEmpty(DataService.ErrorMessage))
+{
+    <p class="text-danger">@DataService.ErrorMessage</p>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Подписываемся на событие DataLoaded, чтобы обновить компонент при изменении данных
+        DataService.DataLoaded += StateHasChanged;
+    }
+
+    // Отписываемся от события при уничтожении компонента
+    public void Dispose()
+    {
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

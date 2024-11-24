@@ -1,0 +1,14 @@
+﻿@page "/menu"
+<PageTitle>Menu</PageTitle>
+
+<DishesList />
+
+@code {
+    [Inject] public IDataService DataService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Загружаем список блюд при инициализации страницы
+        await DataService.GetProductListAsync(1);
+    }
+}
